@@ -12,16 +12,16 @@ export default defineConfig({
         "name":"Bhagwad Gita",
         "short_name":"Bhagwad Gita",
         "display": "standalone",
-        "background_color": "#071952",
-        "theme_color": "#071952",
+        "background_color": "#234E70",
+        "theme_color": "#234E70",
         "icons":[
           {
-            src: "Business/AnushreeMandape/favicon_io/android-chrome-512x512.png",
+            src: "Business/BhagwadGita/favicon_io/android-chrome-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "Business/AnushreeMandape/favicon_io/android-chrome-192x192.png",
+            src: "Business/BhagwadGita/favicon_io/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
