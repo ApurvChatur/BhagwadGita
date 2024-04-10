@@ -17,15 +17,15 @@ const AuthFormComponent = ({ Data, Redux, ReduxUltimate }) => {
     <React.Fragment>
       <section className="bg-[#FBF8BE] dark:bg-[#234E70] text-[#234E70] dark:text-[#FBF8BE] lg:px-20">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
+          <div className="flex flex-col text-center w-full mb-4">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">{Data.title}</h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">{Data?.subtitle}</p>
           </div>
 
           <div className="lg:w-1/2 md:w-2/3 mx-auto mb-4">
             <Alert variant="custom" >
               <RocketIcon className="h-4 w-4" />
-              <AlertTitle>Readymade User!</AlertTitle>
+              <AlertTitle>Try Demo User!</AlertTitle>
               <AlertDescription>
                 <p><b>Email:</b> shraddha.kapoor@bhagwadgita.com</p> 
                 <p><b>Password:</b> Shraddha@123</p>
@@ -47,7 +47,18 @@ const AuthFormComponent = ({ Data, Redux, ReduxUltimate }) => {
                         <div className="relative">
                           <label className="leading-7 text-sm">{each.label}</label>
                           <input 
-                            className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" 
+                            className="
+                              w-full bg-[#FBF8BE] dark:bg-[#234E70] bg-opacity-40 rounded border 
+                              border-[#234E70] dark:border-[#FBF8BE]
+                              focus:border-[#FBF8BE] dark:focus:border-[#234E70] 
+                              focus:bg-[#234E70] dark:focus:bg-[#FBF8BE] 
+                              focus:text-[#FBF8BE] dark:focus:text-[#234E70] 
+                              focus:ring-2 
+                              focus:ring-[#234E70] dark:focus:ring-[#FBF8BE] 
+                              text-[#234E70] dark:text-[#FBF8BE] 
+                              text-base outline-none 
+                              py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
+                            " 
                             type={each.type}
                             name={each.name} 
                             placeholder={each.placeholder} 
@@ -72,7 +83,7 @@ const AuthFormComponent = ({ Data, Redux, ReduxUltimate }) => {
                   }) }
                 </div>
 
-                <div className="p-2 w-full pt-2 mt-4 border-t border-gray-800 text-center">
+                <div className="p-2 w-full pt-2 mt-4 border-t border-[#234E70] dark:border-[#FBF8BE] text-center">
                   {Data.links.map((each, index) => {
                     return (
                       <React.Fragment key={index}>
