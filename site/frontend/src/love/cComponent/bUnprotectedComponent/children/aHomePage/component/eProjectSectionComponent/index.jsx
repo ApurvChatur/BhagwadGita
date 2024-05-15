@@ -8,7 +8,7 @@ import parse from 'html-react-parser';
 
 
 function ProjectSectionComponent({ Redux }) {
-  const [activeProjectGroup, setActiveProjectGroup] = useState("Acrux Enterprise")
+  const [activeProjectGroup, setActiveProjectGroup] = useState("Chapter 1")
 
   return (
     Redux.state.ReceivedObject?.Retrieve?.ProjectSectionRetrieve &&  
